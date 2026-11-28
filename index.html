@@ -84,7 +84,7 @@
         </div>
         <div class="hero__links">
           <a href="mailto:shivam.jaiswal334@gmail.com" aria-label="Email">✉ shivam.jaiswal334@gmail.com</a>
-          <a href="https://www.linkedin.com/in/shivam-j-78a992192/" target="_blank" rel="noopener" aria-label="LinkedIn">in LinkedIn</a>
+          <a href="https://www.linkedin.com/in/shivam-jaiswal-78a992192/" target="_blank" rel="noopener" aria-label="LinkedIn">in LinkedIn</a>
           <a href="tel:+918851780751" aria-label="Phone">☎ +91 88517 80751</a>
         </div>
       </div>
@@ -278,6 +278,64 @@
             <figcaption>A privacy-safe snapshot of the Streamlit governance dashboard I built on Snowflake (live demo available on request).</figcaption>
           </figure>
         </div>
+
+        <div class="case" style="margin-top: 2.5rem;">
+          <div class="case__body">
+            <span class="case__kicker">Data Governance &amp; Analytics · Automated Market Data Pipeline</span>
+            <h3 class="case__title">Self-Healing Financial Market Data Lake &amp; Audit Framework</h3>
+
+            <div class="case__block">
+              <h4>The problem</h4>
+              <p>
+                Financial derivatives data disappears from broker APIs once contracts expire, while manual
+                downloads often suffer from missing trading days, inconsistent schemas, redundant columns,
+                and zero audit visibility — making historical datasets unreliable for analytics and backtesting.
+              </p>
+            </div>
+
+            <div class="case__block">
+              <h4>Challenges faced &amp; solved</h4>
+              <ul>
+                <li><strong>Standardizing Data Quality &amp; Schemas:</strong> Enforced strict, clean column standards across Indices, NIFTY 50 Stocks, and Commodities — eliminating redundant fields and enriching every record with accurate exchange-calendar DTE metrics.</li>
+                <li><strong>Preventing Silent Data Gaps:</strong> Built an automated audit calendar (<code>audit_calendar.csv</code>), daily completeness checks (verifying 375/375 trading-minute candles), and instant Telegram alerts so any missing day or error is caught immediately before contracts expire.</li>
+                <li><strong>Running Reliably on Minimal Cloud Resources:</strong> Organized storage into clean lifecycle layers (<code>incoming</code> ➔ <code>archive</code> ➔ <code>processed</code>) using compressed Parquet files and memory-safe DuckDB merges to run smoothly on a free 1 GB RAM cloud VM.</li>
+              </ul>
+            </div>
+
+            <div class="case__block">
+              <h4>What I achieved</h4>
+              <ul class="case__results">
+                <li><span class="case__metric">600K+</span> clean, standardized records captured automatically every day</li>
+                <li><span class="case__metric">~90%</span> smaller storage footprint using compressed Parquet archives</li>
+                <li><span class="case__metric">100%</span> auditability with daily completeness checks and gap alerts</li>
+              </ul>
+            </div>
+
+            <div class="case__scale">
+              <span><strong>Zero</strong> manual effort</span>
+              <span><strong>Full</strong> audit trail</span>
+              <span><strong>Analytics-ready</strong> schemas</span>
+            </div>
+          </div>
+
+          <figure class="case__media">
+            <div class="metric-card" role="img" aria-label="Market data lakehouse governance snapshot">
+              <div class="metric-card__head">
+                <span class="metric-card__dot"></span>
+                <span>Data Quality &amp; Automation</span>
+              </div>
+              <div class="metric-card__big"><strong>600K+</strong><span>clean rows governed daily</span></div>
+              <div class="metric-card__grid">
+                <div><strong>375/375</strong><span>Completeness</span></div>
+                <div><strong>~90%</strong><span>Space Saved</span></div>
+                <div><strong>3 Layers</strong><span>Data Lifecycle</span></div>
+                <div><strong>100%</strong><span>Audit Logged</span></div>
+              </div>
+              <div class="metric-card__bar"><span style="width:100%"></span></div>
+            </div>
+            <figcaption>End-to-end automated market data pipeline with built-in schema governance, audit logging, and daily quality alerts.</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -303,7 +361,7 @@
           <div class="skill-group">
             <h3>Tools &amp; Platforms</h3>
             <ul class="chips">
-              <li>Snowflake</li><li>DataHub</li><li>dbt</li><li>Streamlit</li><li>Git / CI-CD</li><li>JIRA</li>
+              <li>Snowflake</li><li>DataHub</li><li>dbt</li><li>Streamlit</li><li>DuckDB</li><li>Apache Parquet</li><li>Oracle Cloud (OCI)</li><li>Linux / systemd</li><li>Git / CI-CD</li><li>JIRA</li>
             </ul>
           </div>
           <div class="skill-group">
@@ -372,6 +430,11 @@
             <h3>Analytics for Decision-Making</h3>
             <p>Delivered interactive Power BI dashboards and reusable SQL across 10+ recurring clients, turning raw operational data into KPIs stakeholders act on in real time.</p>
             <ul class="card__tags"><li>Power BI</li><li>SQL</li><li>Analytics</li></ul>
+          </article>
+          <article class="card">
+            <h3>Self-Healing Market Data Lake</h3>
+            <p>Built an automated Python + DuckDB + Parquet pipeline on Oracle Cloud that captures 600K+ clean daily records with strict schema standards, full audit logging, and instant data-quality alerts.</p>
+            <ul class="card__tags"><li>Data Quality</li><li>Python</li><li>DuckDB</li><li>Auditability</li></ul>
           </article>
         </div>
       </div>
